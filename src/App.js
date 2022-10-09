@@ -1,7 +1,12 @@
 import React from "react";
-//My Name
-function App() {
-  return <h1> Welcome to proReader</h1>;
-}
+import { RouterProvider } from "react-router-dom";
+import router from "./utils/Routers";
+const App = () => {
+  return (
+    <div>
+      <RouterProvider router={router} />
+    </div>
+  );
+};
 
 export default App;
